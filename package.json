@@ -7,7 +7,8 @@
     "serve": "vite preview",
     "storybook": "start-storybook -p 6006  --no-manager-cache",
     "build-storybook": "build-storybook",
-    "build-static-webapp": "npx expo build:web"
+    "build-static-webapp": "npx expo build:web",
+    "chromatic": "npx chromatic --project-token=0e2b98693520"
   },
   "dependencies": {
     "@craco/craco": "^6.2.0",

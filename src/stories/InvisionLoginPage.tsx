@@ -95,11 +95,11 @@ const InvisionLoginPage: FC<unknown> = () => {
             </div>
           </div>
         </div>
-        <div className="w-full flex flex-col justify-between h-screen">
-          <div className="flex flex-row items-center justify-between lg:justify-end px-8 py-8">
+        <div className="w-full flex flex-col justify-center h-screen">
+          <div className="absolute top-0 sm:right-0 px-8 py-8">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="lg:hidden h-8 w-8"
+              className="sm:hidden h-8 w-8"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -138,15 +138,13 @@ const InvisionLoginPage: FC<unknown> = () => {
             <a href="#" className="text-xs text-gray-700">
               <input type="text" className="rounded-md w-full" />
               <div className="flex flex-row justify-center mt-8">
-                <button className="bg-purple-400 px-6 py-3 rounded-md text-white text-sm">
+                <button className="btn-primary px-6 py-3 rounded-md text-white text-sm">
                   Sign in
                 </button>
               </div>
             </a>
           </div>
-          <a href="#" className="text-xs text-gray-700"></a>
         </div>
-        <a href="#" className="text-xs text-gray-700"></a>
       </div>
     </>
   );
