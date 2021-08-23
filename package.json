@@ -8,7 +8,7 @@
     "storybook": "start-storybook -p 6006  --no-manager-cache",
     "build-storybook": "build-storybook",
     "build-static-webapp": "npx expo build:web",
-    "chromatic": "npx chromatic --project-token=0e2b98693520"
+    "chromatic": "chromatic --project-token=CHROMATIC_PROJECT_TOKEN"
   },
   "dependencies": {
     "@craco/craco": "^6.2.0",
