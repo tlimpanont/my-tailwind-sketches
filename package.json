@@ -1,0 +1,37 @@
+{
+  "name": "tailwind-sketches",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "serve": "vite preview",
+    "storybook": "start-storybook -p 6006  --no-manager-cache",
+    "build-storybook": "build-storybook",
+    "build-static-webapp": "npx expo build:web"
+  },
+  "dependencies": {
+    "@craco/craco": "^6.2.0",
+    "@tailwindcss/forms": "^0.3.3",
+    "react": "^17.0.0",
+    "react-dom": "^17.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.15.0",
+    "@storybook/addon-actions": "^6.4.0-alpha.30",
+    "@storybook/addon-essentials": "^6.4.0-alpha.30",
+    "@storybook/addon-links": "^6.4.0-alpha.30",
+    "@storybook/addon-postcss": "^2.0.0",
+    "@storybook/react": "^6.4.0-alpha.30",
+    "@types/react": "^17.0.0",
+    "@types/react-dom": "^17.0.0",
+    "@vitejs/plugin-react-refresh": "^1.3.1",
+    "autoprefixer": "^9.8.6",
+    "babel-loader": "^8.2.2",
+    "chromatic": "^5.9.2",
+    "postcss": "^7.0.36",
+    "storybook-builder-vite": "0.0.12",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.7",
+    "typescript": "^4.3.2",
+    "vite": "^2.4.4"
+  }
+}
