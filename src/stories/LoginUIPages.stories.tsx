@@ -1,5 +1,6 @@
 import { ComponentMeta, ComponentStory } from "@storybook/react";
 import React from "react";
+import DropboxLoginPage from "./DropboxLoginPage";
 import InvisionLoginPage from "./InvisionLoginPage";
 import PayPalLoginPage from "./PayPalLoginPage";
 import SplitCardLoginPage from "./SplitCardLoginPage";
@@ -29,12 +30,20 @@ Paypal.parameters = {
   layout: 'centered',
 };
 
-const TempalteInvision: ComponentStory<typeof InvisionLoginPage> = (args) => (
+const TemplateInvision: ComponentStory<typeof InvisionLoginPage> = (args) => (
   <InvisionLoginPage {...args} />
 );
 
-export const Invision = TempalteInvision.bind({});
+export const Invision = TemplateInvision.bind({});
 Invision.parameters = {
   layout: 'fullscreen',
 };
 
+const TemplateDropbox: ComponentStory<typeof DropboxLoginPage> = (args) => (
+  <DropboxLoginPage {...args} />
+);
+
+export const Dropbox = TemplateDropbox.bind({});
+Dropbox.parameters = {
+  layout: 'fullscreen',
+};
