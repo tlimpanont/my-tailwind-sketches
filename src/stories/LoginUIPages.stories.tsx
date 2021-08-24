@@ -1,5 +1,6 @@
 import { ComponentMeta, ComponentStory } from "@storybook/react";
 import React from "react";
+import AirbnbLoginPage from "./AirbnbLoginPage";
 import DropboxLoginPage from "./DropboxLoginPage";
 import InvisionLoginPage from "./InvisionLoginPage";
 import PayPalLoginPage from "./PayPalLoginPage";
@@ -17,17 +18,16 @@ const TemplateA: ComponentStory<typeof SplitCardLoginPage> = (args) => (
 
 export const SplitStoryCard = TemplateA.bind({});
 SplitStoryCard.parameters = {
-  layout: 'centered',
+  layout: "centered",
 };
 
 const TemplatePayPal: ComponentStory<typeof PayPalLoginPage> = (args) => (
   <PayPalLoginPage {...args} />
 );
 
-
 export const Paypal = TemplatePayPal.bind({});
 Paypal.parameters = {
-  layout: 'centered',
+  layout: "centered",
 };
 
 const TemplateInvision: ComponentStory<typeof InvisionLoginPage> = (args) => (
@@ -36,7 +36,7 @@ const TemplateInvision: ComponentStory<typeof InvisionLoginPage> = (args) => (
 
 export const Invision = TemplateInvision.bind({});
 Invision.parameters = {
-  layout: 'fullscreen',
+  layout: "fullscreen",
 };
 
 const TemplateDropbox: ComponentStory<typeof DropboxLoginPage> = (args) => (
@@ -45,5 +45,14 @@ const TemplateDropbox: ComponentStory<typeof DropboxLoginPage> = (args) => (
 
 export const Dropbox = TemplateDropbox.bind({});
 Dropbox.parameters = {
-  layout: 'fullscreen',
+  layout: "fullscreen",
+};
+
+const TemplateAirbnb: ComponentStory<typeof AirbnbLoginPage> = (args) => (
+  <AirbnbLoginPage {...args} />
+);
+
+export const Airbnb = TemplateAirbnb.bind({});
+Airbnb.parameters = {
+  layout: "fullscreen",
 };
