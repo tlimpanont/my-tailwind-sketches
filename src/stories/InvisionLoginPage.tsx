@@ -118,25 +118,25 @@ const InvisionLoginPage: FC<unknown> = () => {
               </button>
             </div>
           </div>
-          <div className="flex flex-col gap-2 w-full lg:w-2/3 px-8  self-center">
+          <div className="flex flex-col gap-2 w-full lg:w-6/12 px-8  self-center">
             <div className="mb-4">
               <h1 className="text-3xl">Sign in to InVision</h1>
               <h4>Enter your details below</h4>
             </div>
-            <label htmlFor>Email address</label>
-            <input type="text" className="rounded-md" />
+            <label for="email">Email address</label>
+            <input id="email" type="text" className="rounded-md py-3" />
             <a href="#" className="text-xs text-blue-500">
               Know your team domain?
             </a>
             <div className="mt-2" />
-            <div className="flex flex-row justify-between items-center">
-              <label htmlFor>Password</label>
+            <div className="flex flex-row justify-between items-center ">
+              <label for="password">Password</label>
               <a href="#" className="text-xs text-gray-700">
                 Forgot password?
               </a>
             </div>
             <a href="#" className="text-xs text-gray-700">
-              <input type="text" className="rounded-md w-full" />
+              <input id="password" type="password" className="rounded-md w-full py-3" />
               <div className="flex flex-row justify-center mt-8">
                 <button className="btn-primary px-6 py-3 rounded-md text-white text-sm">
                   Sign in
