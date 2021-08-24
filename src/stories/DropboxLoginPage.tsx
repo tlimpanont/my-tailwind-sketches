@@ -3,14 +3,14 @@ import React, { FC } from "react";
 const DropboxLoginPage: FC<unknown> = () => {
   return (
     <div className="flex flex-col items-center">
-      <div className="border-b-2 border-gray-300">
+      <div className="border-b-2 border-gray-300 w-full">
         <div className="flex flex-row justify-around py-6 items-center">
           <button  className="hidden sm:block rounded-md border-blue-500 border-2 px-4 py-2 text-blue-500 font-bold text-sm">
             Try Dropbox Business
           </button>
           <img
             src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Dropbox_Logo_01.svg/1200px-Dropbox_Logo_01.svg.png"
-            className="w-5/12 sm:w-2/12"
+            className="w-5/12 sm:w-1/12"
             alt
           />
           <a href="#" className="hidden sm:block  text-blue-500 text-sm">
@@ -19,7 +19,7 @@ const DropboxLoginPage: FC<unknown> = () => {
           </a>
         </div>
       </div>
-      <div className="lg:w-3/4 w-full px-10 lg:px-0 flex flex-row items-center gap-28 mt-8 sm:mt-20">
+      <div className="lg:w-2/4 w-full px-10 lg:px-0 flex flex-row items-center gap-28 mt-8 sm:mt-20">
         <section className="hidden sm:block">
           <img
             src="https://cfl.dropboxstatic.com/static/images/empty_states/sign-in-boulder%402x-vfl87XcA-.png"
