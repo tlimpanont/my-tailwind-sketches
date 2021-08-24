@@ -21,7 +21,7 @@ const DropboxLoginPage: FC<unknown> = () => {
       </div>
       <div className=" flex flex-col items-center justify-center my-8 sm:my-24">
         <div className="w-full px-8 sm:px-0">
-          <div className="justify-evenly flex flex-row gap-20 sm:px-8">
+          <div className="justify-center flex gap-20 flex-row sm:px-8">
             <section className="hidden md:block w-96">
               <img
                 src="https://cfl.dropboxstatic.com/static/images/empty_states/sign-in-boulder%402x-vfl87XcA-.png"

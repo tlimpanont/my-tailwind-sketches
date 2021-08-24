@@ -8,7 +8,7 @@ export type StoryCardProps = HTMLAttributes<HTMLElement> & {
 };
 const StoryCard: FC<StoryCardProps> = (props) => {
   const {
-    bgURL = "http://lorempixel.com/1200/1200/",
+    bgURL = "https://images.unsplash.com/photo-1593642702821-c8da6771f0c6?ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=3589&q=80",
     svg = (
       <svg
         xmlns="http://www.w3.org/2000/svg"
