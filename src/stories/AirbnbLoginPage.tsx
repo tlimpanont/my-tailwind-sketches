@@ -8,14 +8,14 @@ const AirbnbLoginPage: FC<unknown> = () => (
         <img
           className="w-3/12"
           src="https://lacalaboatours.com/wp-content/uploads/2020/03/airbnb.png"
-          alt
+          alt={"airbnblogo"}
         />
       </div>
       <div className="flex-1" />
       <div className="flex flex-row gap-6 items-center">
         <a href="#">Become a host</a>
         <svg
-          className="w-5 h-5"
+          className="w-6 h-6 text-gray-600"
           fill="none"
           stroke="currentColor"
           viewBox="0 0 24 24"
@@ -85,11 +85,11 @@ const AirbnbLoginPage: FC<unknown> = () => (
             <p className="text-xs text-gray-500">
               We’ll call or text you to confirm your number. Standard message
               and data rates apply.{" "}
-              <a href className="underline text-black">
+              <a href={"#"} className="underline text-black">
                 Privacy Policy
               </a>
             </p>
-            <button className="bg-gradient-to-r from-red-600 to-pink-600 text-white py-3 rounded-lg mt-2 mb-4">
+            <button className="transition hover:opacity-90 bg-gradient-to-r from-red-600 to-pink-600 text-white py-3 rounded-lg mt-2 mb-4">
               Continue
             </button>
             <div className="flex flex-row justify-center border-b-2 border-gray-200 relative mb-1">

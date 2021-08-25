@@ -11,7 +11,7 @@ const DropboxLoginPage: FC<unknown> = () => {
           <img
             src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Dropbox_Logo_01.svg/1200px-Dropbox_Logo_01.svg.png"
             className="w-40"
-            alt
+            alt={"dropboxlogo"}
           />
           <a href="#" className="hidden sm:block  text-blue-500 text-sm">
             {" "}
@@ -25,7 +25,7 @@ const DropboxLoginPage: FC<unknown> = () => {
             <section className="hidden md:block w-96">
               <img
                 src="https://cfl.dropboxstatic.com/static/images/empty_states/sign-in-boulder%402x-vfl87XcA-.png"
-                alt
+                alt={"dropboxpromo"}
               />
             </section>
             <section className="w-96">
