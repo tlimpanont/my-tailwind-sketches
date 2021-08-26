@@ -24,6 +24,6 @@ Default.args = {
   icon: "google",
   btnText: "Google"
 };
-// Default.parameters = {
-//   layout: 'centered',
-// };
+Default.parameters = {
+  layout: 'centered',
+};
