@@ -3,10 +3,10 @@ import OutlineButton from "../components/OutlineButton";
 
 const AirbnbLoginPage: FC<unknown> = () => (
   <div className="flex flex-col">
-    <div className="flex flex-row py-4 px-10 items-center shadow-lg">
+    <div className="flex-row py-4 px-10 items-center shadow-lg hidden sm:flex">
       <div>
         <img
-          className="w-3/12"
+          className="w-10"
           src="https://lacalaboatours.com/wp-content/uploads/2020/03/airbnb.png"
           alt={"airbnblogo"}
         />
@@ -62,9 +62,9 @@ const AirbnbLoginPage: FC<unknown> = () => (
       </div>
     </div>
     <div className="flex flex-row justify-center">
-      <div className="max-w-96 mt-20 border-2 border-gray-300 rounded-lg">
+      <div className="max-w-96 mt-0 sm:mt-20 border-0 sm:border-2 border-gray-300 rounded-lg">
         <div className="border-b-2 border-gray-200 p-4">
-          <h3 className="text-center font-bold">Log in or signup</h3>
+          <h3 className="text-center font-bold">Log in or sign up</h3>
         </div>
         <div className="p-8">
           <div className="flex flex-col gap-3">

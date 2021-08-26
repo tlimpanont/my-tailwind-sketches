@@ -27,6 +27,7 @@ const InvisionLoginPage: FC<unknown> = () => {
               />
             </svg>
           </div>
+          <div className="flex-1"></div>
           <h4 className="text-sm">Invision Enterprise Edition</h4>
           <h1 className="text-2xl mt-2">
             The Design collaboration cloud for larger teams
@@ -37,7 +38,8 @@ const InvisionLoginPage: FC<unknown> = () => {
           <button className="rounded-md bg-blue-800 px-4 py-1">
             Schdule a demo
           </button>
-          <div className="absolute bottom-20 px-20 uppercase text-xs text-gray-400">
+          <div className="flex-1"></div>
+          <div className="px-20 uppercase text-xs text-gray-400">
             Trusted by the world's smartest companies
             <div className="flex flex-row mt-4 gap-10 w-full justify-between">
               <svg
