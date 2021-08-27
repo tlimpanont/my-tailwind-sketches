@@ -56,3 +56,12 @@ export const Airbnb = TemplateAirbnb.bind({});
 Airbnb.parameters = {
   layout: "fullscreen",
 };
+
+const TemplateFigma: ComponentStory<typeof FigmaLoginPage> = (args) => (
+  <FigmaLoginPage {...args} />
+);
+
+export const Figma = TemplateFigma.bind({});
+Figma.parameters = {
+  layout: "fullscreen",
+};
