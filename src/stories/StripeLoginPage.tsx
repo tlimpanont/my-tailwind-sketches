@@ -17,7 +17,7 @@ const StripeLoginPage: FC<unknown> = () => (
         </div>
         <div className="context">
             <div className="flex flex-row justify-center pt-2 sm:pt-14 text-sm mb-12">
-                <div className="flex flex-col justify-center gap-6 w-full xl:w-3/12 mx-4 xl:mx-auto">
+                <div className="flex flex-col justify-center gap-6 w-full mx-4 sm:w-2/4 2xl:w-1/4 sm:mx-auto">
                     <img
                         src="https://europeansting.files.wordpress.com/2016/02/stripe-logo.png"
                         className="w-16"
