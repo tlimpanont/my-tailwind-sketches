@@ -7,7 +7,7 @@ import PayPalLoginPage from "./PayPalLoginPage";
 import SplitCardLoginPage from "./SplitCardLoginPage";
 
 export default {
-  title: "Pages/Login UI Pages",
+  title: "Pages/Login Pages",
   component: SplitCardLoginPage,
   subcomponents: { PayPalLoginPage },
 } as ComponentMeta<typeof SplitCardLoginPage>;
