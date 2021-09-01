@@ -2,9 +2,12 @@ import { ComponentMeta, ComponentStory } from "@storybook/react";
 import React from "react";
 import AirbnbLoginPage from "./AirbnbLoginPage";
 import DropboxLoginPage from "./DropboxLoginPage";
+import FigmaLoginPage from "./FigmaLoginPage";
 import InvisionLoginPage from "./InvisionLoginPage";
 import PayPalLoginPage from "./PayPalLoginPage";
 import SplitCardLoginPage from "./SplitCardLoginPage";
+import StripeLoginPage from "./StripeLoginPage";
+
 
 export default {
   title: "Pages/Login Pages",
@@ -55,4 +58,23 @@ const TemplateAirbnb: ComponentStory<typeof AirbnbLoginPage> = (args) => (
 export const Airbnb = TemplateAirbnb.bind({});
 Airbnb.parameters = {
   layout: "fullscreen",
+};
+
+const TemplateFigma: ComponentStory<typeof FigmaLoginPage> = (args) => (
+  <FigmaLoginPage {...args} />
+);
+
+export const Figma = TemplateFigma.bind({});
+Figma.parameters = {
+  layout: "fullscreen",
+};
+
+
+const TemplateStripe: ComponentStory<typeof StripeLoginPage> = (args) => (
+  <StripeLoginPage {...args} />
+);
+
+export const Stripe = TemplateStripe.bind({});
+Stripe.parameters = {
+  layout: "fullscreen"
 };

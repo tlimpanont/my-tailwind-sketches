@@ -1,3 +1,4 @@
+const colors = require("tailwindcss/colors");
 module.exports = {
   purge: ["./src/**/*.{js,jsx,ts,tsx,css,scss}", "./public/index.html"],
   darkMode: false, // or 'media' or 'class'
@@ -12,6 +13,11 @@ module.exports = {
       },
       width: {
         '1200px': '1200px',
+      },
+      colors: {
+        sky: colors.sky,
+        cyan: colors.cyan,
+        stripepurple: "#635bff",
       },
     },
   },
