@@ -1,5 +1,5 @@
 import React, { FC } from "react";
-import OutlineButton from "../components/OutlineButton";
+import OutlineButton from "../OutlineButton";
 
 const FigmaLoginPage: FC<any> = () => {
   return (

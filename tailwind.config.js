@@ -4,15 +4,13 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
-      height: {
-        '600px': '600px',
-        '400px': '400px',
-        '300px': '300px',
-        '200px': '200px',
-        '1px': '1px',
-      },
-      width: {
-        '1200px': '1200px',
+      spacing: {
+        175: "43.75rem", // 700px
+        43.75: "10.9375rem", // 175px
+        300: "75rem", // 1200px
+        150: "37.5rem", // 600px
+        75: "18.75rem", // 300px
+        100: "25rem", // 400px
       },
       colors: {
         sky: colors.sky,

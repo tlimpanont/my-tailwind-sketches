@@ -1,6 +1,6 @@
 import React, { FC } from "react";
-import Button from "../components/Button";
-import StoryCard from "../components/StoryCard";
+import Button from "../Button";
+import StoryCard from "../StoryCard";
 
 const SplitCardLoginPage: FC<any> = () => {
   return (

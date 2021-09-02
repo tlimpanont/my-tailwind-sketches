@@ -1,6 +1,6 @@
 import React from "react";
 import { ComponentMeta, ComponentStory } from "@storybook/react";
-import FacebookDevelopersPage from "./FacebookDevelopersPage";
+import FacebookDevelopersPage from "../components/pages/FacebookDevelopersPage";
 
 export default {
   title: "Pages/Commercial Info Pages",

@@ -1,5 +1,6 @@
 import React, { FC } from "react";
-import BuildWithFBCard from "../components/facebook/BuildWithFBCard";
+import BuildWithFBCard from "../facebook/BuildWithFBCard";
+import DevelopersToolsCard from "../facebook/DeveloperToolsCard";
 
 const FacebookDevelopersPage: FC<unknown> = () => (
   <div>
@@ -97,13 +98,13 @@ const FacebookDevelopersPage: FC<unknown> = () => (
       </a>
     </section>
     <div className="flex flex-row justify-center bg-gray-100 py-16 px-12">
-      <div className="flex flex-col gap-4 w-1200px">
+      <div className="flex flex-col gap-4 w-300">
         <h2 className="uppercase text-3xl">Build with facebook</h2>
         <h3 className="text-1xl mb-6">
           Connect with customers and improve efficiency with our featured
           platforms.
         </h3>
-        <div className="grid grid-flow-row grid-cols-1 md:grid-cols-2 grid-rows-1 gap-6">
+        <div className="grid grid-flow-row grid-cols-1 lg:grid-cols-2 xl:grid-cols-4 grid-rows-1 gap-4">
           {/*- */}
           <BuildWithFBCard
             title="Messenger Platform"
@@ -144,205 +145,49 @@ const FacebookDevelopersPage: FC<unknown> = () => (
       </div>
     </div>
     <div className="flex flex-row justify-center bg-white py-16 px-12">
-      <div className="flex flex-col gap-4 w-1200px">
+      <div className="flex flex-col gap-4 w-300">
         <h2 className="uppercase text-3xl">Developer Tools</h2>
         <h3 className="text-1xl mb-6">
           Take a closer look at the products we offer.
         </h3>
-        <div className="grid grid-flow-row grid-cols-1 sm:grid-cols-2  grid-rows-2 gap-12">
-          {/*- */}
-          <div className="developer-tools-card">
-            <div className="flex">
-              <h3 className="developer-tools-title border-cyan-600 text-cyan-600 inline">
-                Business Tools
-              </h3>
-            </div>
-            <p>
-              Build and scale your business across multiple interactive touch
-              points.
-            </p>
-            <div className="flex flex-row gap-3 items-center">
-              <div className="rounded-full border-2 border-black p-1">
-                <svg
-                  className="w-6 h-6"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M17 8l4 4m0 0l-4 4m4-4H3"
-                  />
-                </svg>
-              </div>
-              <div>Learn more</div>
-            </div>
-          </div>
-          {/*- */}
-          {/*- */}
-          <div className="developer-tools-card">
-            <div className="flex">
-              <h3 className="developer-tools-title border-green-600 text-green-600">
-                Open Source
-              </h3>
-            </div>
-            <p>
-              Build and scale your business across multiple interactive touch
-              points.
-            </p>
-            <div className="flex flex-row gap-3 items-center">
-              <div className="rounded-full border-2 border-black p-1">
-                <svg
-                  className="w-6 h-6"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M17 8l4 4m0 0l-4 4m4-4H3"
-                  />
-                </svg>
-              </div>
-              <div>Learn more</div>
-            </div>
-          </div>
-          {/*- */}
-          {/*- */}
-          <div className="developer-tools-card">
-            <div className="flex">
-              <h3 className="developer-tools-title border-blue-700 text-blue-700">
-                Gaming
-              </h3>
-            </div>
-            <p>
-              Build and scale your business across multiple interactive touch
-              points.
-            </p>
-            <div className="flex flex-row gap-3 items-center">
-              <div className="rounded-full border-2 border-black p-1">
-                <svg
-                  className="w-6 h-6"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M17 8l4 4m0 0l-4 4m4-4H3"
-                  />
-                </svg>
-              </div>
-              <div>Learn more</div>
-            </div>
-          </div>
-          {/*- */}
-          {/*- */}
-          <div className="developer-tools-card">
-            <div className="flex">
-              <h3 className="developer-tools-title border-red-500 text-red-500">
-                Social Integrations
-              </h3>
-            </div>
-            <p>
-              Explore tools and resources to help you grow your audiences on
-              Facebook, Instagram, and beyond.
-            </p>
-            <div className="flex flex-row gap-3 items-center">
-              <div className="rounded-full border-2 border-black p-1">
-                <svg
-                  className="w-6 h-6"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M17 8l4 4m0 0l-4 4m4-4H3"
-                  />
-                </svg>
-              </div>
-              <div>Learn more</div>
-            </div>
-          </div>
-          {/*- */}
-          {/*- */}
-          <div className="developer-tools-card">
-            <div className="flex">
-              <h3 className="developer-tools-title border-red-700 text-red-700">
-                Artificial Intelligence
-              </h3>
-            </div>
-            <p>
-              Advancing the field of machine learning to empower AI developers.
-            </p>
-            <div className="flex flex-row gap-3 items-center">
-              <div className="rounded-full border-2 border-black p-1">
-                <svg
-                  className="w-6 h-6"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M17 8l4 4m0 0l-4 4m4-4H3"
-                  />
-                </svg>
-              </div>
-              <div>Learn more</div>
-            </div>
-          </div>
-          {/*- */}
-          {/*- */}
-          <div className="developer-tools-card">
-            <div className="flex">
-              <h3 className="developer-tools-title border-purple-800 text-purple-800">
-                AR/VR
-              </h3>
-            </div>
-            <p>
-              Bring your imagination to life through cutting-edge, immersive
-              experiences.
-            </p>
-            <div className="flex flex-row gap-3 items-center">
-              <div className="rounded-full border-2 border-black p-1">
-                <svg
-                  className="w-6 h-6"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M17 8l4 4m0 0l-4 4m4-4H3"
-                  />
-                </svg>
-              </div>
-              <div>Learn more</div>
-            </div>
-          </div>
-          {/*- */}
+        <div className="grid grid-flow-row grid-cols-1 sm:grid-cols-3  grid-rows-2 gap-8">
+          <DevelopersToolsCard
+            className="border-red-600 text-red-600"
+            title="Business Tools"
+            description="Build and scale your business across multiple interactive touch points."
+          />
+
+          <DevelopersToolsCard
+            className="border-green-600 text-green-600"
+            title="Open Source"
+            description="Empowering community through open source technology."
+          />
+
+          <DevelopersToolsCard
+            className="border-blue-600 text-blue-600"
+            title="Gaming"
+            description="Access a suite of innovative gaming platforms and services"
+          />
+
+          <DevelopersToolsCard
+            className="border-red-600 text-red-600"
+            title="Social Integrations"
+            description="Explore tools and resources to help you grow your audiences on Facebook, Instagram, and beyond."
+          />
+
+          <DevelopersToolsCard
+            className="border-red-800 text-red-800"
+            title="Artificial Intelligence"
+            description="Advancing the field of machine learning to empower AI developers."
+          />
+
+          <DevelopersToolsCard
+            className="border-purple-600 text-purple-600"
+            title="AR/VR"
+            description="Bring your imagination to life through cutting-edge, immersive experiences."
+          />
         </div>
-        <div className="h-1px bg-gray-300 w-full mt-10" />
+        <div className="h-px bg-gray-300 w-full mt-10" />
         <div className="flex flex-row justify-end mt-4">
           <div className="flex flex-row gap-3 items-center">
             <div className="rounded-full border-2 border-black p-1">
@@ -367,7 +212,7 @@ const FacebookDevelopersPage: FC<unknown> = () => (
       </div>
     </div>
     <div className="flex flex-row justify-center bg-white px-12">
-      <div className="flex flex-col gap-4 w-1200px">
+      <div className="flex flex-col gap-4 w-300">
         <h2 className="uppercase text-3xl">
           DISCOVER DEVELOPER AND STARTUP PROGRAMS
         </h2>

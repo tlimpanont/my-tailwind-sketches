@@ -1,13 +1,12 @@
 import { ComponentMeta, ComponentStory } from "@storybook/react";
 import React from "react";
-import AirbnbLoginPage from "./AirbnbLoginPage";
-import DropboxLoginPage from "./DropboxLoginPage";
-import FigmaLoginPage from "./FigmaLoginPage";
-import InvisionLoginPage from "./InvisionLoginPage";
-import PayPalLoginPage from "./PayPalLoginPage";
-import SplitCardLoginPage from "./SplitCardLoginPage";
-import StripeLoginPage from "./StripeLoginPage";
-
+import AirbnbLoginPage from "../components/pages/AirbnbLoginPage";
+import DropboxLoginPage from "../components/pages/DropboxLoginPage";
+import FigmaLoginPage from "../components/pages/FigmaLoginPage";
+import InvisionLoginPage from "../components/pages/InvisionLoginPage";
+import PayPalLoginPage from "../components/pages/PayPalLoginPage";
+import SplitCardLoginPage from "../components/pages/SplitCardLoginPage";
+import StripeLoginPage from "../components/pages/StripeLoginPage";
 
 export default {
   title: "Pages/Login Pages",
@@ -69,12 +68,11 @@ Figma.parameters = {
   layout: "fullscreen",
 };
 
-
 const TemplateStripe: ComponentStory<typeof StripeLoginPage> = (args) => (
   <StripeLoginPage {...args} />
 );
 
 export const Stripe = TemplateStripe.bind({});
 Stripe.parameters = {
-  layout: "fullscreen"
+  layout: "fullscreen",
 };

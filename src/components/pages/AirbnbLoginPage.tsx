@@ -1,5 +1,5 @@
 import React, { FC } from "react";
-import OutlineButton from "../components/OutlineButton";
+import OutlineButton from "../OutlineButton";
 
 const AirbnbLoginPage: FC<unknown> = () => (
   <div className="flex flex-col">

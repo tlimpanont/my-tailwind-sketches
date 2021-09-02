@@ -120,7 +120,7 @@ const InvisionLoginPage: FC<unknown> = () => {
               </button>
             </div>
           </div>
-          <div className="flex flex-col gap-2 w-full lg:w-6/12 px-8  self-center">
+          <div className="flex flex-col gap-2 w-full lg:w-175 px-8 self-center">
             <div className="mb-4">
               <h1 className="text-3xl">Sign in to InVision</h1>
               <h4>Enter your details below</h4>
@@ -138,7 +138,11 @@ const InvisionLoginPage: FC<unknown> = () => {
               </a>
             </div>
             <a href="#" className="text-xs text-gray-700">
-              <input id="password" type="password" className="rounded-md w-full py-3" />
+              <input
+                id="password"
+                type="password"
+                className="rounded-md w-full py-3"
+              />
               <div className="flex flex-row justify-center mt-8">
                 <button className="btn-primary px-6 py-3 rounded-md text-white text-sm">
                   Sign in
