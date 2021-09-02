@@ -1,4 +1,5 @@
 import React, { FC } from "react";
+import BuildWithFBCard from "../components/facebook/BuildWithFBCard";
 
 const FacebookDevelopersPage: FC<unknown> = () => (
   <div>
@@ -104,77 +105,41 @@ const FacebookDevelopersPage: FC<unknown> = () => (
         </h3>
         <div className="grid grid-flow-row grid-cols-1 md:grid-cols-2 grid-rows-1 gap-6">
           {/*- */}
-          <div className="build-with-fb-card">
-            <img
-              className="w-12"
-              src="https://scontent-amt2-1.xx.fbcdn.net/v/t39.2365-6/226177888_798170684162453_8023468962600941236_n.svg?_nc_cat=106&ccb=1-5&_nc_sid=ad8a9d&_nc_ohc=wdNn9gMghdQAX_s9WYO&_nc_ht=scontent-amt2-1.xx&oh=4911bb5f967b8ea93c2d978bf9f11ca3&oe=61338173"
-              alt
-            />
-            <h3 className="text-2xl">Messenger Platform</h3>
-            <p>
-              Generate leads, drive sales, or provide customer service through a
-              personal and convenient user experience.
-            </p>
-            <div className="flex-1" />
-            <a href="#" className="underline">
-              Learn more
-            </a>
-          </div>
-          {/*- */}
-          {/*- */}
-          <div className="build-with-fb-card">
-            <img
-              className="w-12"
-              src="https://scontent-amt2-1.xx.fbcdn.net/v/t39.2365-6/226127869_351236176439268_592085626137346941_n.svg?_nc_cat=111&ccb=1-5&_nc_sid=ad8a9d&_nc_ohc=f4Wn3nAfZM4AX_1G2rw&_nc_oc=AQm27HJljUzFuEarm7p1Ggo7xEH4bz1a1EnkM0DOfvrS2Cxhz17SaKkwl-xa0O6AlKw&_nc_ht=scontent-amt2-1.xx&oh=e0372c49951a5b8f6d13aaf07dadaf48&oe=6133FCCF"
-              alt
-            />
-            <h3 className="text-2xl">Facebook Login</h3>
-            <p>
-              A convenient way for Facebook’s billions of global users to log
-              into your app or website.
-            </p>
-            <div className="flex-1" />
-            <a href="#" className="underline">
-              Learn more
-            </a>
-          </div>
-          {/*- */}
-          {/*- */}
-          <div className="build-with-fb-card">
-            <img
-              className="w-12"
-              src="https://scontent-amt2-1.xx.fbcdn.net/v/t39.2365-6/227175283_808041863214240_3061448061232478945_n.svg?_nc_cat=109&ccb=1-5&_nc_sid=ad8a9d&_nc_ohc=4YejjZ81h9gAX8JQ3ox&_nc_ht=scontent-amt2-1.xx&oh=00e777ca0a59e046327495e0fef7c7ed&oe=613429D7"
-              alt
-            />
-            <h3 className="text-2xl">Instagram Platform</h3>
-            <p>
-              Create tools for businesses, creators, and people to enhance the
-              Instagram experience.
-            </p>
-            <div className="flex-1" />
-            <a href="#" className="underline">
-              Learn more
-            </a>
-          </div>
-          {/*- */}
-          {/*- */}
-          <div className="build-with-fb-card">
-            <img
-              className="w-12"
-              src="https://scontent-ams4-1.xx.fbcdn.net/v/t39.2365-6/226097564_886109315591449_8700415775853663268_n.png?_nc_cat=107&ccb=1-5&_nc_sid=ad8a9d&_nc_ohc=eXlbOa-FKA4AX_zJi2g&_nc_ht=scontent-ams4-1.xx&oh=8b47abbc1a1238ad8ab409c9749d8b0d&oe=613471B7"
-              alt
-            />
-            <h3 className="text-2xl">WhatsApp Business API</h3>
-            <p>
-              Chat with people on their preferred channel through a customized
-              experience that’s quick to implement.
-            </p>
-            <div className="flex-1" />
-            <a href="#" className="underline">
-              Learn more
-            </a>
-          </div>
-          {/*- */}
+          <BuildWithFBCard
+            title="Messenger Platform"
+            description="Generate leads, drive sales, or provide customer service through a
+              personal and convenient user experience."
+            iconImgURL="https://scontent-amt2-1.xx.fbcdn.net/v/t39.2365-6/226177888_798170684162453_8023468962600941236_n.svg?_nc_cat=106&ccb=1-5&_nc_sid=ad8a9d&_nc_ohc=wdNn9gMghdQAX_s9WYO&_nc_ht=scontent-amt2-1.xx&oh=4911bb5f967b8ea93c2d978bf9f11ca3&oe=61338173"
+            CTALink="#"
+            CTAText="Learn more"
+          />
+
+          <BuildWithFBCard
+            title="Facebook Login"
+            description="A convenient way for Facebook’s billions of global users to log
+            into your app or website."
+            iconImgURL="https://scontent-amt2-1.xx.fbcdn.net/v/t39.2365-6/226127869_351236176439268_592085626137346941_n.svg?_nc_cat=111&ccb=1-5&_nc_sid=ad8a9d&_nc_ohc=f4Wn3nAfZM4AX_1G2rw&_nc_oc=AQm27HJljUzFuEarm7p1Ggo7xEH4bz1a1EnkM0DOfvrS2Cxhz17SaKkwl-xa0O6AlKw&_nc_ht=scontent-amt2-1.xx&oh=e0372c49951a5b8f6d13aaf07dadaf48&oe=6133FCCF"
+            CTALink="#"
+            CTAText="Learn more"
+          />
+
+          <BuildWithFBCard
+            title="Instagram Platform"
+            description="Create tools for businesses, creators, and people to enhance the
+            Instagram experience."
+            iconImgURL="https://scontent-amt2-1.xx.fbcdn.net/v/t39.2365-6/227175283_808041863214240_3061448061232478945_n.svg?_nc_cat=109&ccb=1-5&_nc_sid=ad8a9d&_nc_ohc=4YejjZ81h9gAX8JQ3ox&_nc_ht=scontent-amt2-1.xx&oh=00e777ca0a59e046327495e0fef7c7ed&oe=613429D7"
+            CTALink="#"
+            CTAText="Learn more"
+          />
+
+          <BuildWithFBCard
+            title="WhatsApp Business API"
+            description="Chat with people on their preferred channel through a customized
+            experience that’s quick to implement."
+            iconImgURL="https://scontent-ams4-1.xx.fbcdn.net/v/t39.2365-6/226097564_886109315591449_8700415775853663268_n.png?_nc_cat=107&ccb=1-5&_nc_sid=ad8a9d&_nc_ohc=eXlbOa-FKA4AX_zJi2g&_nc_ht=scontent-ams4-1.xx&oh=8b47abbc1a1238ad8ab409c9749d8b0d&oe=613471B7"
+            CTALink="#"
+            CTAText="Learn more"
+          />
         </div>
       </div>
     </div>
