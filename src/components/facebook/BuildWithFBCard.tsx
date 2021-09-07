@@ -8,7 +8,7 @@ const BuildWithFBCard: FC<{
   CTAText: string;
   CTAHandler?: MouseEventHandler;
 }> = ({
-  iconImgURL = "https://scontent-amt2-1.xx.fbcdn.net/v/t39.2365-6/226177888_798170684162453_8023468962600941236_n.svg?_nc_cat=106&ccb=1-5&_nc_sid=ad8a9d&_nc_ohc=wdNn9gMghdQAX_s9WYO&_nc_ht=scontent-amt2-1.xx&oh=4911bb5f967b8ea93c2d978bf9f11ca3&oe=61338173",
+  iconImgURL = "facebook-messenger.svg",
   title,
   description,
   CTALink = "#",

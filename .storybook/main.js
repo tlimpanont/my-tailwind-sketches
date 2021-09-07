@@ -1,3 +1,4 @@
+const PREVIEW_URL_PATH = "https://tlimpanont.github.io/my-tailwind-sketches";
 module.exports = {
   stories: ["../src/**/*.stories.mdx", "../src/**/*.stories.@(js|jsx|ts|tsx)"],
   addons: [
@@ -21,6 +22,10 @@ module.exports = {
   core: {
     builder: "storybook-builder-vite",
   },
+  // managerWebpack: async (config) => {
+  //   config.output.publicPath = PREVIEW_URL_PATH;
+  //   return config;
+  // },
   webpackFinal: async (config) => {
     config.module.rules.push({
       test: /\,css&/,
@@ -35,6 +40,7 @@ module.exports = {
       ],
       include: path.resolve(__dirname, "../"),
     });
+    // config.output.publicPath = PREVIEW_URL_PATH;
     return config;
   },
 };

@@ -7,7 +7,7 @@ const FacebookDevelopersPage: FC<unknown> = () => (
     <header className="flex flex-row px-4 sm:px-12 py-8">
       <img
         className="w-8/12 sm:w-80"
-        src="https://scontent-ams4-1.xx.fbcdn.net/v/t39.2365-6/87790598_576958092900214_7460073234956812288_n.svg?_nc_cat=107&ccb=1-5&_nc_sid=ad8a9d&_nc_ohc=LYFKiq6Cj1MAX-eDqLQ&_nc_ht=scontent-ams4-1.xx&oh=b99aa0be504d9690837e769f1d74c378&oe=61350861"
+        src="facebook-for-developers.svg"
         alt
       />
       <div className="flex-1" />
@@ -110,7 +110,7 @@ const FacebookDevelopersPage: FC<unknown> = () => (
             title="Messenger Platform"
             description="Generate leads, drive sales, or provide customer service through a
               personal and convenient user experience."
-            iconImgURL="https://scontent-amt2-1.xx.fbcdn.net/v/t39.2365-6/226177888_798170684162453_8023468962600941236_n.svg?_nc_cat=106&ccb=1-5&_nc_sid=ad8a9d&_nc_ohc=wdNn9gMghdQAX_s9WYO&_nc_ht=scontent-amt2-1.xx&oh=4911bb5f967b8ea93c2d978bf9f11ca3&oe=61338173"
+            iconImgURL='facebook-messenger.svg'
             CTALink="#"
             CTAText="Learn more"
           />
@@ -119,7 +119,7 @@ const FacebookDevelopersPage: FC<unknown> = () => (
             title="Facebook Login"
             description="A convenient way for Facebook’s billions of global users to log
             into your app or website."
-            iconImgURL="https://scontent-amt2-1.xx.fbcdn.net/v/t39.2365-6/226127869_351236176439268_592085626137346941_n.svg?_nc_cat=111&ccb=1-5&_nc_sid=ad8a9d&_nc_ohc=f4Wn3nAfZM4AX_1G2rw&_nc_oc=AQm27HJljUzFuEarm7p1Ggo7xEH4bz1a1EnkM0DOfvrS2Cxhz17SaKkwl-xa0O6AlKw&_nc_ht=scontent-amt2-1.xx&oh=e0372c49951a5b8f6d13aaf07dadaf48&oe=6133FCCF"
+            iconImgURL="facebook.svg"
             CTALink="#"
             CTAText="Learn more"
           />
@@ -128,7 +128,7 @@ const FacebookDevelopersPage: FC<unknown> = () => (
             title="Instagram Platform"
             description="Create tools for businesses, creators, and people to enhance the
             Instagram experience."
-            iconImgURL="https://scontent-amt2-1.xx.fbcdn.net/v/t39.2365-6/227175283_808041863214240_3061448061232478945_n.svg?_nc_cat=109&ccb=1-5&_nc_sid=ad8a9d&_nc_ohc=4YejjZ81h9gAX8JQ3ox&_nc_ht=scontent-amt2-1.xx&oh=00e777ca0a59e046327495e0fef7c7ed&oe=613429D7"
+            iconImgURL='instagram.svg'
             CTALink="#"
             CTAText="Learn more"
           />
@@ -137,7 +137,7 @@ const FacebookDevelopersPage: FC<unknown> = () => (
             title="WhatsApp Business API"
             description="Chat with people on their preferred channel through a customized
             experience that’s quick to implement."
-            iconImgURL="https://scontent-ams4-1.xx.fbcdn.net/v/t39.2365-6/226097564_886109315591449_8700415775853663268_n.png?_nc_cat=107&ccb=1-5&_nc_sid=ad8a9d&_nc_ohc=eXlbOa-FKA4AX_zJi2g&_nc_ht=scontent-ams4-1.xx&oh=8b47abbc1a1238ad8ab409c9749d8b0d&oe=613471B7"
+            iconImgURL="whatsapp.png"
             CTALink="#"
             CTAText="Learn more"
           />
