@@ -1,0 +1,7 @@
+@import "facebook.tailwind.css";
+@import "stripe.tailwind.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+

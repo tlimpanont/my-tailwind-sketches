@@ -1,0 +1,22 @@
+@layer components {
+    .social-btn-outer {
+        @apply text-white rounded-md p-4 sm:p-2 w-full relative font-bold sm:font-normal;
+    }
+
+    .social-btn-inner {
+        @apply absolute left-0 top-0 hidden sm:block border-r-2 p-4 sm:p-2  rounded-l-md font-bold sm:font-normal;
+    }
+
+    .text-input {
+        @apply rounded-sm border-gray-300 h-12 sm:h-9;
+    }
+
+    .btn-primary {
+        @apply rounded-lg text-white font-bold bg-blue-600 px-4 py-2 hover:bg-blue-900;
+    }
+
+    .promo-cover {
+        @apply h-96 sm:h-150;
+        background-image: url("https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2251&q=80");
+    }
+}
