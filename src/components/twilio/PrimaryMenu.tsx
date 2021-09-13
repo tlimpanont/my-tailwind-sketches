@@ -2,7 +2,7 @@ import {Popover} from "@headlessui/react";
 import React, {FC, HTMLProps} from "react";
 import PrimaryMenuPanel, {PrimaryMenuPanelProps} from "./PrimaryMenuPanel";
 import classNames from 'classnames'
-
+import {v4 as uuidv4} from 'uuid';
 
 export type PrimaryMenuProps = {
     items: {
@@ -13,8 +13,8 @@ export type PrimaryMenuProps = {
 const PrimaryMenu: FC<HTMLProps<HTMLDivElement> & PrimaryMenuProps> = ({items, className, ...rest}) => {
     return (
         <Popover.Group className={`h-16 flex-row gap-x-12 relative pt-6 ${className}`} {...rest} as={"div"}>
-            {items.map(({title, panelColumns}, index) => {
-                return <Popover as={"div"} key={Math.random() * index}>
+            {items.map(({title, panelColumns}) => {
+                return <Popover as={"div"} key={uuidv4()}>
                     {({open}) => {
                         const popoverClassNames = classNames({
                             'text-blue-500 border-b-blue-500 border-b-2': open,
