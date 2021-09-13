@@ -125,14 +125,14 @@ const InvisionLoginPage: FC<unknown> = () => {
               <h1 className="text-3xl">Sign in to InVision</h1>
               <h4>Enter your details below</h4>
             </div>
-            <label for="email">Email address</label>
+            <label htmlFor="email">Email address</label>
             <input id="email" type="text" className="rounded-md py-3" />
             <a href="#" className="text-xs text-blue-500">
               Know your team domain?
             </a>
             <div className="mt-2" />
             <div className="flex flex-row justify-between items-center ">
-              <label for="password">Password</label>
+              <label htmlFor="password">Password</label>
               <a href="#" className="text-xs text-gray-700">
                 Forgot password?
               </a>

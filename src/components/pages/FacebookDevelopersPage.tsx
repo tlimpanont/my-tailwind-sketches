@@ -8,7 +8,7 @@ const FacebookDevelopersPage: FC<unknown> = () => (
       <img
         className="w-8/12 sm:w-80"
         src="facebook-for-developers.svg"
-        alt
+        alt={"facebook-for-developers"}
       />
       <div className="flex-1" />
       <svg
@@ -222,7 +222,7 @@ const FacebookDevelopersPage: FC<unknown> = () => (
             <figure>
               <img
                 src="https://images.unsplash.com/photo-1552581234-26160f608093?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2250&q=80"
-                alt
+                alt={"figure"}
               />
             </figure>
             <div className="flex flex-col gap-4 p-6 bg-yellow-100 text-yellow-600">
@@ -256,7 +256,7 @@ const FacebookDevelopersPage: FC<unknown> = () => (
             <figure>
               <img
                 src="https://images.unsplash.com/photo-1541746972996-4e0b0f43e02a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2250&q=80"
-                alt
+                alt={"figure"}
               />
             </figure>
             <div className="flex flex-col gap-4 p-6 bg-green-200 text-green-800">
