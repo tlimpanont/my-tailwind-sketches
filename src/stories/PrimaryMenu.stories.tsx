@@ -11,7 +11,7 @@ const PrimaryMenuTemplate: ComponentStory<typeof PrimaryMenu> = (
     args
 ) => (
     <div className={"flex justify-center"}>
-        <PrimaryMenu {...args} className={'hidden lg:flex'}/>
+        <PrimaryMenu {...args} className={'flex-wrap sm:flex'}/>
     </div>
 );
 
