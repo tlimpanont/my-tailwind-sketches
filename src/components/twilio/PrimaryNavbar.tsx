@@ -2,6 +2,7 @@ import React, { FC, HTMLProps, useRef, useState } from "react";
 import PrimaryMenu, { PrimaryMenuProps } from "./PrimaryMenu";
 import { Drop } from "grommet";
 import classNames from "classnames";
+import MobilePrimaryMenu from "./MobilePrimaryMenu";
 
 const PrimaryNavbar: FC<
   HTMLProps<HTMLDivElement> & { primaryMenu: PrimaryMenuProps }
@@ -11,7 +12,7 @@ const PrimaryNavbar: FC<
   return (
     <div
       className={
-        "flex flex-row items-center border-b-2 border-gray-200 px-4 sm:px-8 h-20"
+        "flex flex-row items-center border-b-2 border-gray-200 px-4 h-20"
       }
     >
       <img
@@ -68,9 +69,9 @@ const PrimaryNavbar: FC<
               xmlns="http://www.w3.org/2000/svg"
             >
               <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
                 d="M6 18L18 6M6 6l12 12"
               ></path>
             </svg>
@@ -90,33 +91,7 @@ const PrimaryNavbar: FC<
               hidden: !menuActive,
             })}
           >
-            {primaryMenu.items.map(({ title }) => {
-              return (
-                <div
-                  className={
-                    "justify-between flex px-4 py-4 border-b-2 border-gray-100 w-screen"
-                  }
-                >
-                  <div>{title}</div>
-                  <div>
-                    <svg
-                      className="w-6 h-6"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M19 9l-7 7-7-7"
-                      ></path>
-                    </svg>
-                  </div>
-                </div>
-              );
-            })}
+            <MobilePrimaryMenu primaryMenu={primaryMenu} />
           </nav>
         </Drop>
       </div>
