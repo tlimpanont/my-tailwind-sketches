@@ -1,5 +1,5 @@
 import React from "react";
-import TopMenuNav from "../components/bol.com/TopMenuNav";
+import TopMenuNav from "./TopMenuNav";
 import { ComponentStory } from "@storybook/react";
 
 export default {
