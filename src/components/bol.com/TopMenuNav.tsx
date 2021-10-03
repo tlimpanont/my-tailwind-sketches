@@ -1,10 +1,7 @@
 import React, { FC, useRef, useState } from "react";
 import { v4 as uuidv4 } from "uuid";
 import classNames from "classnames";
-import { fadeIn } from "react-animations";
-import styled, { keyframes } from "styled-components";
-
-const fadeInAnimation = keyframes`${fadeIn}`;
+import { Transition } from "react-transition-group";
 
 export type TopMenuNavProps = {
   menuItems: {
@@ -195,16 +192,39 @@ const TopMenuNav: FC<TopMenuNavProps> = ({ menuItems }) => {
           )}
         </div>
       </nav>
-      {selectedMenuItem && (
-        <FadeDiv>
-          <div className="fixed w-screen h-screen bg-black opacity-60 z-0"></div>
-        </FadeDiv>
-      )}
+      <Fade in={selectedMenuItem}>
+        <div className="fixed w-screen h-screen bg-black opacity-60 z-0"></div>
+      </Fade>
     </>
   );
 };
-const FadeDiv = styled.div`
-  animation: 0.5s ${fadeInAnimation};
-`;
 
+const duration = 300;
+
+const defaultStyle = {
+  transition: `opacity ${duration}ms ease-in-out`,
+  opacity: 0,
+};
+
+const transitionStyles: any = {
+  entering: { opacity: 1 },
+  entered: { opacity: 1 },
+  exiting: { opacity: 0 },
+  exited: { opacity: 0 },
+};
+
+const Fade = ({ in: inProp, children }: any) => (
+  <Transition in={inProp} timeout={duration}>
+    {(state) => (
+      <div
+        style={{
+          ...defaultStyle,
+          ...transitionStyles[state],
+        }}
+      >
+        {children}
+      </div>
+    )}
+  </Transition>
+);
 export default TopMenuNav;
