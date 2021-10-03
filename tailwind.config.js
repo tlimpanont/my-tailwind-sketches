@@ -1,10 +1,12 @@
 const colors = require("tailwindcss/colors");
 module.exports = {
-  mode: 'jit',
+  mode: "jit",
   purge: ["./src/**/*.{js,jsx,ts,tsx,css,scss}", "./public/index.html"],
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
+      boxSizing: ["hover", "focus"],
+      borderStyle: ["hover", "focus"],
       spacing: {
         175: "43.75rem", // 700px
         43.75: "10.9375rem", // 175px

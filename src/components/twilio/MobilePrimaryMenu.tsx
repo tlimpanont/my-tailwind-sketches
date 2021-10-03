@@ -2,7 +2,7 @@ import React, { FC, useState } from "react";
 import { PrimaryMenuProps } from "./PrimaryMenu";
 import { PrimaryMenuPanelProps } from "./PrimaryMenuPanel";
 import { Box, Layer } from "grommet";
-import PrimaryMenuItem, { PrimaryMenuItemProps } from "./PrimaryMenuItem";
+import PrimaryMenuItem from "./PrimaryMenuItem";
 import { v4 as uuidv4 } from "uuid";
 
 const MobilePrimaryMenu: FC<{ primaryMenu: PrimaryMenuProps }> = ({
