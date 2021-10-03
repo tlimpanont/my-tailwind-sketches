@@ -8,9 +8,7 @@ export default {
 } as ComponentMeta<typeof PrimaryMenu>;
 
 const PrimaryMenuTemplate: ComponentStory<typeof PrimaryMenu> = (args) => (
-  <div className={"flex justify-center"}>
-    <PrimaryMenu {...args} className={"flex-wrap sm:flex"} />
-  </div>
+  <PrimaryMenu {...args} />
 );
 
 export const Default = PrimaryMenuTemplate.bind({});

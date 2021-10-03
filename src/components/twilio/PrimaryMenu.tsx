@@ -18,18 +18,18 @@ const PrimaryMenu: FC<HTMLProps<HTMLDivElement> & PrimaryMenuProps> = ({
 }) => {
   return (
     <Popover.Group
-      className={`h-16 flex-row gap-x-12 pt-6 ${className}`}
+      className={`px-4 gap-x-12 flex sm:flex-row sm:text-auto text-center flex-col h-16 pt-6 ${className}`}
       {...rest}
       as={"div"}
     >
       {items.map(({ title, panelColumns }) => {
         return (
-          <Popover as={"div"} key={uuidv4()}>
+          <Popover as={"div"} key={uuidv4()} className={"w-full sm:w-auto "}>
             {({ open }) => {
               const popoverClassNames = classNames({
                 "text-blue-500 border-b-blue-500 border-b-2": open,
                 "hover:text-blue-500 hover:border-b-blue-500 hover:border-b-2": !open,
-                "active:text-blue-900 active:border-b-blue-900 active:border-b-2 pb-7 transition-color duration-100":
+                "mb-7 active:text-blue-900 active:border-b-blue-900 active:border-b-2  sm:pb-6 transition-color duration-100":
                   open || !open,
               });
 

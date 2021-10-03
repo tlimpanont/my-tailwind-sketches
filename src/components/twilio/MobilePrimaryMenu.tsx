@@ -14,10 +14,10 @@ const MobilePrimaryMenu: FC<{ primaryMenu: PrimaryMenuProps }> = ({
   }>();
 
   return (
-    <div className={"block md:hidden"}>
+    <div className={"block lg:hidden"}>
       {selectedPrimaryMenuItem && (
         <Layer
-          full={"vertical"}
+          full={"horizontal"}
           position={"top"}
           modal={true}
           onEsc={() => setSelectedMenuItem(undefined)}
