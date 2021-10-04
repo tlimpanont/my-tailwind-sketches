@@ -1,6 +1,6 @@
 import React, { FC, HTMLProps, useRef, useState } from "react";
 import PrimaryMenu, { PrimaryMenuProps } from "./PrimaryMenu";
-import { Drop } from "grommet";
+import { Button, Drop } from "grommet";
 import classNames from "classnames";
 import MobilePrimaryMenu from "./MobilePrimaryMenu";
 
@@ -60,21 +60,27 @@ const PrimaryNavbar: FC<
               Menu
             </span>
           ) : (
-            <svg
+            <Button
+              aria-label={"Close"}
               onClick={() => setMenuActive(false)}
-              className="w-6 h-6"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M6 18L18 6M6 6l12 12"
-              ></path>
-            </svg>
+              plain
+              icon={
+                <svg
+                  className="w-6 h-6"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M6 18L18 6M6 6l12 12"
+                  ></path>
+                </svg>
+              }
+            />
           )}
         </button>
         <Drop

@@ -18,7 +18,7 @@ const PrimaryMenu: FC<HTMLProps<HTMLDivElement> & PrimaryMenuProps> = ({
 }) => {
   return (
     <Popover.Group
-      className={`px-4 gap-x-12 flex sm:flex-row sm:text-auto text-center flex-col h-16 pt-6 ${className}`}
+      className={`px-4 gap-x-12 flex sm:flex-row w-full sm:w-auto sm:text-auto text-left flex-col h-16 pt-6 ${className}`}
       {...rest}
       as={"div"}
     >
@@ -26,12 +26,13 @@ const PrimaryMenu: FC<HTMLProps<HTMLDivElement> & PrimaryMenuProps> = ({
         return (
           <Popover as={"div"} key={uuidv4()} className={"w-full sm:w-auto "}>
             {({ open }) => {
-              const popoverClassNames = classNames({
-                "text-blue-500 border-b-blue-500 border-b-2": open,
-                "hover:text-blue-500 hover:border-b-blue-500 hover:border-b-2": !open,
-                "mb-7 active:text-blue-900 active:border-b-blue-900 active:border-b-2  sm:pb-6 transition-color duration-100":
-                  open || !open,
-              });
+              const popoverClassNames = classNames(
+                "border-b-2 border-b-transparent mb-7 active:text-blue-900 active:border-b-blue-900 active:border-b-2  sm:pb-6 transition-color duration-100",
+                {
+                  "text-blue-500 border-b-blue-500 border-b-2": open,
+                  "hover:text-blue-500 hover:border-b-blue-500 hover:border-b-2": !open,
+                }
+              );
 
               const targetRef = useRef<any>();
               return (

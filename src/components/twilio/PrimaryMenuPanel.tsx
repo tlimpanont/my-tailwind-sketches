@@ -13,7 +13,7 @@ const PrimaryMenuPanel: FC<
 > = ({ columns, ...rest }) => {
   return (
     <div
-      className={`grid grid-cols-${columns.length} grid-flow-col gap-20 p-10 shadow-2xl`}
+      className={`w-full sm:w-auto grid grid-rows-1 grid-flow-row gap-8 sm:grid-cols-${columns.length} sm:grid-flow-col sm:gap-20 p-10 shadow-2xl`}
       {...rest}
     >
       {columns.map(({ title, items }) => {

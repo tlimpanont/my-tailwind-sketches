@@ -1,7 +1,7 @@
 import React, { FC, useState } from "react";
 import { PrimaryMenuProps } from "./PrimaryMenu";
 import { PrimaryMenuPanelProps } from "./PrimaryMenuPanel";
-import { Box, Layer } from "grommet";
+import { Box, Button, Layer } from "grommet";
 import PrimaryMenuItem from "./PrimaryMenuItem";
 import { v4 as uuidv4 } from "uuid";
 
@@ -18,7 +18,7 @@ const MobilePrimaryMenu: FC<{ primaryMenu: PrimaryMenuProps }> = ({
       {selectedPrimaryMenuItem && (
         <Layer
           full={"horizontal"}
-          position={"top"}
+          position={"left"}
           modal={true}
           onEsc={() => setSelectedMenuItem(undefined)}
         >
@@ -31,21 +31,27 @@ const MobilePrimaryMenu: FC<{ primaryMenu: PrimaryMenuProps }> = ({
               <h2 className={"w-full text-blue-500 font-bold"}>
                 {selectedPrimaryMenuItem.title}
               </h2>
-              <svg
+              <Button
+                aria-label="Close"
                 onClick={() => setSelectedMenuItem(undefined)}
-                className="w-6 h-6"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M5 15l7-7 7 7"
-                ></path>
-              </svg>
+                plain
+                icon={
+                  <svg
+                    className="w-6 h-6"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M6 18L18 6M6 6l12 12"
+                    ></path>
+                  </svg>
+                }
+              />
             </div>
             <div className={"px-8 mt-12"}>
               {selectedPrimaryMenuItem.panelColumns.map(
@@ -85,28 +91,35 @@ const MobilePrimaryMenu: FC<{ primaryMenu: PrimaryMenuProps }> = ({
         const { title, panelColumns } = item;
         return (
           <div
+            role={"button"}
             key={uuidv4()}
             onClick={() => setSelectedMenuItem(item)}
             className={
-              "justify-between flex px-4 py-4 border-b-2 border-gray-100 w-screen"
+              "cursor-pointer justify-between items-center flex px-4 py-4 border-b-2 border-gray-100 w-screen"
             }
           >
             <div>{title}</div>
             <div>
-              <svg
-                className="w-6 h-6"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M19 9l-7 7-7-7"
-                ></path>
-              </svg>
+              <Button
+                aria-label="Open menuitem"
+                plain
+                icon={
+                  <svg
+                    className="w-6 h-6"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M9 5l7 7-7 7"
+                    ></path>
+                  </svg>
+                }
+              />
             </div>
           </div>
         );
