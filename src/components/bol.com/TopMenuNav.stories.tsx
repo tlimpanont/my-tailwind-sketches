@@ -7,7 +7,7 @@ export default {
   component: TopMenuNav,
 };
 
-export const Default: ComponentStory<typeof TopMenuNav> = (args) => (
+export const Desktop: ComponentStory<typeof TopMenuNav> = (args) => (
   <div>
     <header className={"p-4 bg-[#0000a4] text-white"}>
       <img src="bol-logo.png" alt="bol logo" className={"w-32"} />
@@ -76,10 +76,10 @@ export const Default: ComponentStory<typeof TopMenuNav> = (args) => (
     </article>
   </div>
 );
-Default.parameters = {
+Desktop.parameters = {
   layout: "fullscreen",
 };
-Default.args = {
+Desktop.args = {
   menuItems: [
     {
       title: "Met subitems",
